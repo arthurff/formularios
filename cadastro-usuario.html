@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastro de usuário</title>
+        <hr>
+    </head>
+    <body>
+        <h1>Cadastro de cliente</h1>
+        <hr>
+        <hr>
+        <form name="form_cadastro_usuario" action="savar-usuario.html" method="POST">
+           
+            <fieldset><strong>
+            <legend>Infoemações Pessoais</legend>
+            <hr>
+            <label for="nome">Nome: </label> <input id="nome" name="nome" required> <br> <br>
+            
+            <label for="sobrenome">sobrenome: </label> <input id="sobrenome" name="sobrenome" required> <br> <br>
+            
+            <label for="E-mail">E-mail: </label> <input id="E-mail" name="E-mail" type="email" required> <br> <br>
+            </strong></fieldset>
+            <hr>
+            <hr>
+            
+            <fieldset><strong>
+            <legend>Informações de Usuário</legend>
+            <hr>
+            <label for="Nome do Usuário">Nome do usuário: </label> <input id="Nome do Usuário" name="Nome do Usuário" required>
+            
+            <label for="Data de nascimento">Data de nascimento: </label> <input id="Data de nascimento" name="Data de nascimento" required> <br> <br>
+            
+            <label for="Senha">Senha:</label> <input id="Senha" name="Senha" type="password" required>
+            
+            <label for="Confirmar Senha">Confirmar Senha: </label> <input id="Confirmar Senha" name="Confirmar Senha" type="password" required>
+            </strong></fieldset>
+            <hr>
+            <hr>
+        
+            <fieldset><strong>
+            <legend>Redes Sociais</legend>
+            <hr>
+            <img src="linkedin.png">
+            <label for="linkedin.com">linkedin.com: </label> <input id="linkedin.com" name="linkedin.com"> <br>
+            
+            <img src="facebook.png">
+            <label for="facebook.com">facebook.com: </label> <input id="facebook.com" name="facebook.com"> <br>
+            
+            <img src="instagram.png">
+            <label for="instagram.com">instagram.com: </label> <input id="instagram.com" name="instagram.com">
+            </strong></fieldset>
+            <hr>
+            <hr>
+
+            <fieldset><strong>
+                <legend>Contrato</legend>
+                <hr>
+                Aceita os termos do contrato?
+                <br>
+                <input type="radio" name="contrato">Sim
+                &nbsp; &nbsp;
+                <input type="radio" name="contrato">Não <br>
+
+                Aceita esses outro contrato?
+                <select name="contrato2">
+                    <option>não</option>
+                    <option>sim</option>
+                    <option>com certeza</option>
+                </select>
+            </strong></fieldset>
+            <br>
+            <br>
+            <br>
+            <button>Salvar</button>
+        </form>
+    </body>
+</html>
